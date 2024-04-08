@@ -1,0 +1,102 @@
+<!doctype html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>وبسایت در دست تعمیر میباشد</title>
+
+    <link href="./assets/css/fonts.css" rel="stylesheet" />
+    <link href="./assets/css/app.css" rel="stylesheet" />
+    <link href="./assets/css/theme.css" rel="stylesheet" />
+
+    <script defer src="./assets/scripts/app.js"></script>
+
+    <script>
+      // Set Theme from Localstorage at site load
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.getItem("theme") === "dark",
+      );
+    </script>
+  </head>
+
+  <body>
+    <div class="sr-only">
+      <svg>
+        <!-- instagram mdi-instagram -->
+        <symbol id="instagram" viewBox="0 0 24 24">
+          <path
+            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+            fill="currentColor"
+          ></path>
+        </symbol>
+        <!-- twitter ri-twitter-x-fill -->
+
+        <symbol id="twitter" viewBox="0 0 24 24">
+          <path
+            d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231l5.45-6.231Zm-1.161 17.52h1.833L7.045 4.126H5.078L17.044 19.77Z"
+            fill="currentColor"
+          ></path>
+        </symbol>
+        <!-- aparat simple-icons-aparat -->
+        <symbol id="aparat" viewBox="0 0 24 24">
+          <path
+            d="M12.001 1.594c-9.27-.003-13.913 11.203-7.36 17.758a10.403 10.403 0 0 0 17.76-7.355c0-5.744-4.655-10.401-10.4-10.403zM6.11 6.783c.501-2.598 3.893-3.294 5.376-1.103c1.483 2.19-.422 5.082-3.02 4.582A2.97 2.97 0 0 1 6.11 6.783zm4.322 8.988c-.504 2.597-3.897 3.288-5.377 1.096c-1.48-2.192.427-5.08 3.025-4.579a2.97 2.97 0 0 1 2.352 3.483zm1.26-2.405c-1.152-.223-1.462-1.727-.491-2.387c.97-.66 2.256.18 2.04 1.334a1.32 1.32 0 0 1-1.548 1.053zm6.198 3.838c-.501 2.598-3.893 3.293-5.376 1.103c-1.484-2.191.421-5.082 3.02-4.583a2.97 2.97 0 0 1 2.356 3.48zm-1.967-5.502c-2.598-.501-3.293-3.896-1.102-5.38c2.19-1.483 5.081.422 4.582 3.02a2.97 2.97 0 0 1-3.48 2.36zM13.59 23.264l2.264.61a3.715 3.715 0 0 0 4.543-2.636l.64-2.402a11.383 11.383 0 0 1-7.448 4.428zm7.643-19.665L18.87 2.97a11.376 11.376 0 0 1 4.354 7.62l.65-2.459A3.715 3.715 0 0 0 21.231 3.6zM.672 13.809l-.541 2.04a3.715 3.715 0 0 0 2.636 4.543l2.107.562a11.38 11.38 0 0 1-4.203-7.145zM10.357.702L8.15.126a3.715 3.715 0 0 0-4.547 2.637l-.551 2.082A11.376 11.376 0 0 1 10.358.702Z"
+            fill="currentColor"
+          ></path>
+        </symbol>
+      </svg>
+    </div>
+    <div
+      class="flex min-h-screen items-center justify-center bg-primary-light dark:bg-primary-dark"
+    >
+      <div class="container flex flex-col items-center justify-center gap-y-8">
+        <img
+          src="./assets/images/others/maintenance.png"
+          alt="maintenance"
+          class="w-80"
+        />
+        <div class="text-3xl text-quaternary-700 dark:text-primary-light">
+          بزودی برمیگردیم ...
+        </div>
+        <div
+          class="text-center leading-loose text-quaternary-600 dark:text-quaternary-300"
+        >
+          برای اطلاع از بروزرسانی ها مارا در شبکه های اجتماعی دنبال کنید
+        </div>
+        <div class="flex items-center justify-center gap-x-10">
+          <div
+            class="text-quaternary-700 transition-colors duration-200 hover:text-rose-600 dark:text-primary-light hover:dark:text-rose-500"
+          >
+            <a aria-label="Follow us on instagram" href="#" target="_blank">
+              <div class="sr-only">instagram link</div>
+              <svg class="h-8 w-8">
+                <use xlink:href="#instagram" />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="text-quaternary-700 transition-colors duration-200 hover:text-blue-600 dark:text-primary-light hover:dark:text-blue-500"
+          >
+            <a aria-label="Follow us on twitter" href="#" target="_blank">
+              <div class="sr-only">x - twitter link</div>
+              <svg class="h-8 w-8">
+                <use xlink:href="#twitter" />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="text-quaternary-700 transition-colors duration-200 hover:text-red-600 dark:text-primary-light hover:dark:text-red-500"
+          >
+            <a aria-label="Follow us on aparat" href="#" target="_blank">
+              <div class="sr-only">aparat link</div>
+              <svg class="h-8 w-8">
+                <use xlink:href="#aparat" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
