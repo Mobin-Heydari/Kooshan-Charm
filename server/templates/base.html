@@ -1139,7 +1139,7 @@
 
                                 <a
                                   class="line-clamp-2 h-12 text-quaternary-700 dark:text-primary-light"
-                                  href="{% url "products:product_detail" item.slug item.id %}"
+                                  href="{% url "products:product_detail" item.product.slug item.product.id %}"
                                 >
                                   {{ item.product.name }}
                                 </a>
@@ -1163,7 +1163,7 @@
                                     class="text-tertiary-500 dark:text-tertiary-400"
                                   >
                                     <span class="text-lg font-bold"
-                                      >{{ item.product.price }}</span
+                                      >{{ item.price }}</span
                                     >
                                     <span class="text-sm">تومان</span>
                                   </div>
@@ -1841,7 +1841,7 @@
                       <div class="flex items-center justify-between gap-x-2">
                         <!-- Product Price -->
                         <div class="text-tertiary-500 dark:text-tertiary-400">
-                          <span class="font-bold">{{ item.product.price }}</span>
+                          <span class="font-bold">{{ item.price }}</span>
                           <span class="text-xs">تومان</span>
                         </div>
                         <!-- Product Quantity -->

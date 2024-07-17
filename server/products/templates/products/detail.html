@@ -244,11 +244,11 @@
                                             type="radio"
                                             name="color"
                                             value="{{ color.color }}"
-                                            id="color-desktop-3"
+                                            id="color-desktop-{{color.id}}"
                                             class="peer hidden"
                                           />
                                         <label
-                                          for="color-desktop-3"
+                                          for="color-desktop-{{color.id}}"
                                           class="relative block cursor-pointer rounded-full border-2 border-secondary-light p-2 shadow-base peer-checked:border-tertiary-500 hover:border-senary-200 dark:border-primary-light/5 peer-checked:dark:border-tertiary-400 dark:hover:border-primary-light/10"
                                         >
                                           <div class="flex items-center gap-x-2">
@@ -306,7 +306,7 @@
                                 <div
                                   class="flex items-center gap-x-1 text-tertiary-500 dark:text-tertiary-400"
                                 >
-                                  <span class="text-xl font-bold">{{ product.price }}</span>
+                                  <span class="text-xl font-bold">{{ product.str_price }}</span>
                                   <span>تومان</span>
                                 </div>
                               </div>
@@ -375,7 +375,7 @@
                 <div
                   class="flex items-center gap-x-1 text-sm font-light text-tertiary-500 dark:text-tertiary-400 sm:text-base md:text-base"
                 >
-                  <a href="./index.html"> {{ product.primery_category}} </a>
+                  <a href="./index.html"> {{ product.primery_category }} </a>
                   <svg class="h-5 w-5">
                     <use xlink:href="#chevron-left" />
                   </svg>
@@ -505,12 +505,12 @@
                           type="radio"
                           name="color"
                           value="{{ color.id }}"
-                          id="color-1"
+                          id="color-{{color.id}}"
                           class="peer hidden"
                         />
 
                         <label
-                          for="color-1"
+                          for="color-{{color.id}}"
                           class="relative block cursor-pointer rounded-full border-2 border-secondary-light p-2 shadow-base peer-checked:border-tertiary-500 hover:border-senary-200 dark:border-primary-light/5 peer-checked:dark:border-tertiary-400 dark:hover:border-primary-light/10"
                         >
                           <div class="flex items-center gap-x-2">
@@ -604,7 +604,7 @@
                   <!-- Price -->
                   <div class="space-y-1">
                     <div class="text-tertiary-500 dark:text-tertiary-400">
-                      <span class="font-semibold">{{ product.price }}</span>
+                      <span class="font-semibold">{{ product.str_price }}</span>
                       <span class="text-sm font-light">تومان</span>
                     </div>
                   </div>
@@ -660,7 +660,7 @@
                                 <div
                                   class="text-sm font-bold text-tertiary-500 dark:text-tertiary-400 md:text-base"
                                 >
-                                  {{ product.price }}
+                                  {{ product.str_price }}
                                   <span class="text-xs font-light md:text-sm">تومان</span>
                                 </div>
                               </div>

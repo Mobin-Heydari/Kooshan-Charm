@@ -96,6 +96,7 @@ class Color(models.Model):
 
 
 class ProductDescription(models.Model):
+    
     title = models.CharField(
         max_length=200,
         verbose_name="عنوان"
@@ -129,6 +130,7 @@ class ProductImage(models.Model):
 
 
 class Product(models.Model):
+    
     primery_category = models.ForeignKey(
         PrimeryCategory,
         on_delete=models.CASCADE,
@@ -187,6 +189,11 @@ class Product(models.Model):
     sales = models.IntegerField(verbose_name="فروش", default=0)
     
     price = models.BigIntegerField(verbose_name="قیمت")
+    str_price = models.CharField(
+        verbose_name="قیمت",
+        max_length=200
+    )
+    
     quantity =models.PositiveIntegerField(verbose_name="تعداد موجود محصول")
     available = models.BooleanField(verbose_name="موجود", default=True)
     
