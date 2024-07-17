@@ -166,3 +166,94 @@ PWA_APP_ICONS_APPLE = [
         'sizes': '160x160'
     }
 ]
+
+
+# Service worker path
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/assets/js', 'serviceworker.js')
+
+
+# PWA manifest settings
+PWA_APP_NAME = "Kooshan Charm"
+PWA_APP_DESCRIPTION = "فروشگاه اینترنتی لوازم چرمی"
+PWA_APP_THEME_COLOR = '#000000'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_SCOPE = '/'
+PWA_APP_ORIENTATION = 'any'
+PWA_APP_START_URL = '/'
+PWA_APP_STATUS_BAR_COLOR = 'default'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/assets/images/pwa/logos/win/192x192.png',
+        'sizes': '192x192'
+    },
+    {
+        'src': '/static/assets/images/pwa/logos/win/256x256.png',
+        'sizes': '256x256'
+    },
+    {
+        'src': '/static/assets/images/pwa/logos/win/384x384.png',
+        'sizes': '384x384'
+    },
+    {
+        'src': '/static/assets/images/pwa/logos/win/512x512.png',
+        'sizes': '512x512'
+    },
+    
+    # Androids
+    {
+        'src': '/static/assets/images/pwa/logos/android/72x72.png',
+        'sizes': '72x72'
+    },
+    {
+        'src': '/static/assets/images/pwa/logos/android/96x96.png',
+        'sizes': '96x96'
+    },
+    
+    {
+        'src': '/static/assets/images/pwa/logos/android/128x128.png',
+        'sizes': '128x128'
+    },
+    
+    {
+        'src': '/static/assets/images/pwa/logos/android/144x144.png',
+        'sizes': '144x144'
+    },
+    
+    {
+        'src': '/static/assets/images/pwa/logos/android/152x152.png',
+        'sizes': '152x152'
+    },
+    
+    {
+        'src': '/static/assets/images/pwa/logos/android/192x192.png',
+        'sizes': '192x192'
+    },
+    
+    {
+        'src': '/static/assets/images/pwa/logos/android/384x384.png',
+        'sizes': '384x384'
+    },
+    
+    {
+        'src': '/static/assets/images/pwa/logos/android/512x512.png',
+        'sizes': '512x512'
+    },
+]
+
+PWA_APP_ICONS_APPLE = [
+    {
+        'src': '/static/assets/images/pwa/logos/ios/120x120.png',
+        'sizes': '120x120'
+    }
+]
+
+PWA_APP_SPLASH_SCREEN = [
+    {
+        'src': '/static/assets/images/pwa/logos/ios/120x120.png',
+        'media': '(device-width: 120px) and (device-height: 120px) and (-webkit-device-pixel-ratio: 2)'
+    }
+]
+
+PWA_APP_DIR = 'rtl'
+PWA_APP_LANG = 'fa-IR'
