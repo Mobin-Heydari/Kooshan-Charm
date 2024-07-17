@@ -146,8 +146,8 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/assets/js', 'servicewor
 
 
 # PWA manifest settings
-PWA_APP_NAME = "Hendrix Shop"
-PWA_APP_DESCRIPTION = "هندریکس شاپ فروشگاه لوازم خانگی"
+PWA_APP_NAME = "کوشان چرم"
+PWA_APP_DESCRIPTION = "کوشان چرم فروشگاه لوازم چرمی"
 PWA_APP_THEME_COLOR = "5, 150, 105"
 PWA_APP_BACKGROUND_COLOR = "5, 150, 105"
 PWA_APP_DISPLAY = 'standalone'
